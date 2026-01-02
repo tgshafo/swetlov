@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adapter | swetlov</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Анимированная координатная сетка -->
+    <div class="grid-overlay"></div>
+    
+    <!-- Главный контейнер -->
+    <main class="container">
+        <!-- Аватар и информация -->
+        <section class="profile-section">
+            <div class="avatar-container">
+                <img src="img/avatar.jpg" alt="swetlov" class="avatar" id="avatar">
+                <div class="avatar-glow"></div>
+            </div>
+            
+            <div class="profile-info">
+                <h1 class="nickname">swetlov</h1>
+                <p class="username">@vkswetlov</p>
+                <div class="status">
+                    <div class="status-dot"></div>
+                    <span class="status-text">онлайн</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Кнопки -->
+        <section class="buttons-section">
+            <div class="buttons-grid">
+                <a href="https://t.me/Vkswetlov" class="adapter-btn" target="_blank">
+                    <div class="btn-content">
+                        <i class="fab fa-telegram"></i>
+                        <span class="btn-text">мой аккаунт</span>
+                    </div>
+                    <div class="btn-glow"></div>
+                </a>
+
+                <a href="https://t.me/+RvIJpAZytNY5NjEy" class="adapter-btn" target="_blank">
+                    <div class="btn-content">
+                        <i class="fas fa-project-diagram"></i>
+                        <span class="btn-text">мой проект</span>
+                    </div>
+                    <div class="btn-glow"></div>
+                </a>
+
+                <a href="https://t.me/+te--f9CnytVmZGU6" class="adapter-btn" target="_blank">
+                    <div class="btn-content">
+                        <i class="fas fa-code"></i>
+                        <span class="btn-text">мои ворки</span>
+                    </div>
+                    <div class="btn-glow"></div>
+                </a>
+
+                <a href="https://t.me/+HtU0BVp926s1NWIy" class="adapter-btn" target="_blank">
+                    <div class="btn-content">
+                        <i class="fas fa-users"></i>
+                        <span class="btn-text">мой клан</span>
+                    </div>
+                    <div class="btn-glow"></div>
+                </a>
+
+                <a href="https://t.me/+6jZ3dH5S_XxkNTVi" class="adapter-btn" target="_blank">
+                    <div class="btn-content">
+                        <i class="fas fa-tags"></i>
+                        <span class="btn-text">прайс</span>
+                    </div>
+                    <div class="btn-glow"></div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Дополнительная информация -->
+        <section class="info-section">
+            <div class="info-card">
+                <h3 class="info-title">
+                    <i class="fas fa-terminal"></i>
+                    о адаптере
+                </h3>
+                <p class="info-text">
+                    Адаптер — это централизованная точка доступа ко всем моим проектам 
+                    и ресурсам. Здесь собраны все важные ссылки в одном месте.
+                </p>
+                <div class="stats">
+                    <div class="stat">
+                        <i class="fas fa-link"></i>
+                        <span>5 активных ссылок</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-bolt"></i>
+                        <span>24/7 онлайн</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Футер -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="copyright">
+                    &copy; 2024 adapter.swetlov | все права защищены
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-item">HTML5</span>
+                    <span class="tech-item">CSS3</span>
+                    <span class="tech-item">JavaScript</span>
+                    <span class="tech-item">GitHub Pages</span>
+                </div>
+                <div class="github-link">
+                    <a href="https://github.com/tgshafo" target="_blank">
+                        <i class="fab fa-github"></i>
+                        tgshafo на GitHub
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Эффекты неона -->
+    <div class="neon-effects">
+        <div class="neon-line line-1"></div>
+        <div class="neon-line line-2"></div>
+        <div class="neon-line line-3"></div>
+        <div class="neon-line line-4"></div>
+    </div>
+
+    <!-- Аудио для эффектов (опционально) -->
+    <audio id="hover-sound" preload="auto">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-select-click-1109.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
